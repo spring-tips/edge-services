@@ -1,0 +1,15 @@
+type Query {
+    customers : [Customer]
+}
+
+type Customer {
+    id :ID
+    name :String
+    orders : [Order]
+}
+
+
+type Order {
+    id :ID
+    customerId: ID
+}
